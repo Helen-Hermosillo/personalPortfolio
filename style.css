@@ -1,0 +1,95 @@
+:root {
+    --primary-color: #FF9AA2;
+    --secondary-color: #FFB7B2;
+    --accent-color: #FFDAC1;
+    --text-color: #5F5F5F;
+    --font-main: 'Baloo 2', cursive;
+    --font-heading: 'Rubik Vinyl', cursive;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-main);
+    background-color: #FFF1F3;
+    color: var(--text-color);
+}
+
+header.hero {
+    text-align: center;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    padding: 50px;
+    border-bottom-left-radius: 50% 20%;
+}
+
+header.hero h1 {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    color: #fff;
+    margin: 0;
+}
+
+header.hero .tagline {
+    font-size: 1.2rem;
+    color: #FFE3E6;
+    margin-top: 10px;
+}
+
+section {
+    padding: 30px;
+    text-align: center;
+}
+
+.about h2, .projects h2 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.about p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.project-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: #FFF;
+    border: 2px solid var(--secondary-color);
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 200px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}
